@@ -19,7 +19,7 @@ Here 'l' is the given value where f(l) < 0
 'r' is given value where f(r) > 0
 'iterations' is the maximum number of iterations that happen if answer is not found
 */
-void Bisection_Method(double l, double r, int iterations) {  //? 41 iterations
+void Bisection_Method(double l, double r, int iterations) {
     double prev = l, next = r;
     for (int i = 1; i <= iterations; ++i) {
         double mid = (l + r) / 2;
@@ -53,7 +53,7 @@ Here 'l' is the given value where f(l) < 0
 'r' is given value where f(r) > 0
 'iterations' is the maximum number of iterations that happen if answer is not found
 */
-void Regula_falsi(double l, double r, int iterations) {  //? 26 iterations
+void Regula_falsi(double l, double r, int iterations) {
     double prev = l, next = r;
     for (int i = 1; i <= iterations; ++i) {
         double n_ext = nxt_Regula(r, l);
@@ -87,7 +87,7 @@ Here 'l' is the given value where f(l) < 0
 'r' is given value where f(r) > 0
 'iterations' is the maximum number of iterations that happen if answer is not found
 */
-void Newton_Raphson(double l, double r, int iterations) {  //? 4 iterations
+void Newton_Raphson(double l, double r, int iterations) {
     double mid = (l + r) / 2;
     double prev = mid, next = prev;
     for (int i = 1; i <= iterations; ++i) {
